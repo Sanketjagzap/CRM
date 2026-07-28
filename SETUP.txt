@@ -1,0 +1,12 @@
+Modern AI CRM setup
+
+1. Install MongoDB locally and start the service.
+2. Copy backend/.env.example to backend/.env and keep MONGO_URI pointed at your local MongoDB instance.
+3. Run npm install from the repository root.
+4. Start backend and frontend with npm run dev.
+5. Open http://localhost:5173 after both services are running.
+
+Notes
+
+This workspace intentionally avoids markdown files.
+The backend defaults to a local MongoDB connection at mongodb://127.0.0.1:27017/modern_ai_crm.

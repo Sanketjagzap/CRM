@@ -1,0 +1,550 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+:root.theme-light {
+  color-scheme: light;
+}
+
+html, body, #root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: #07111f;
+  color: #e5eefb;
+  overflow-x: hidden;
+}
+
+body.theme-light {
+  background: linear-gradient(180deg, #f8fbff 0%, #edf4fb 100%);
+  color: #0f172a;
+}
+
+body.theme-light .mesh {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.1), transparent 22%),
+    radial-gradient(circle at 90% 0%, rgba(99, 102, 241, 0.09), transparent 18%),
+    radial-gradient(circle at 80% 85%, rgba(34, 211, 238, 0.08), transparent 18%),
+    linear-gradient(180deg, rgba(248, 251, 255, 0.98), rgba(235, 242, 250, 0.98));
+}
+
+body.theme-light .text-white,
+.theme-light .text-white {
+  color: #0f172a !important;
+}
+
+body.theme-light .text-slate-50,
+.theme-light .text-slate-50,
+body.theme-light .text-slate-100,
+.theme-light .text-slate-100,
+body.theme-light .text-slate-200,
+.theme-light .text-slate-200 {
+  color: #1e293b !important;
+}
+
+body.theme-light .text-slate-300,
+.theme-light .text-slate-300 {
+  color: #334155 !important;
+}
+
+body.theme-light .text-slate-400,
+.theme-light .text-slate-400 {
+  color: #475569 !important;
+}
+
+body.theme-light .text-zinc-50,
+.theme-light .text-zinc-50,
+body.theme-light .text-zinc-100,
+.theme-light .text-zinc-100,
+body.theme-light .text-zinc-200,
+.theme-light .text-zinc-200 {
+  color: #18181b !important;
+}
+
+body.theme-light .text-zinc-300,
+.theme-light .text-zinc-300 {
+  color: #3f3f46 !important;
+}
+
+body.theme-light .text-zinc-400,
+.theme-light .text-zinc-400 {
+  color: #52525b !important;
+}
+
+body.theme-light .text-gray-50,
+.theme-light .text-gray-50,
+body.theme-light .text-gray-100,
+.theme-light .text-gray-100,
+body.theme-light .text-gray-200,
+.theme-light .text-gray-200 {
+  color: #1f2937 !important;
+}
+
+body.theme-light .text-gray-300,
+.theme-light .text-gray-300 {
+  color: #4b5563 !important;
+}
+
+body.theme-light .text-gray-400,
+.theme-light .text-gray-400 {
+  color: #6b7280 !important;
+}
+
+body.theme-light .text-neutral-50,
+.theme-light .text-neutral-50,
+body.theme-light .text-neutral-100,
+.theme-light .text-neutral-100,
+body.theme-light .text-neutral-200,
+.theme-light .text-neutral-200 {
+  color: #171717 !important;
+}
+
+body.theme-light .text-neutral-300,
+.theme-light .text-neutral-300 {
+  color: #404040 !important;
+}
+
+body.theme-light .text-neutral-400,
+.theme-light .text-neutral-400 {
+  color: #525252 !important;
+}
+
+body.theme-light .text-sky-50,
+.theme-light .text-sky-50,
+body.theme-light .text-sky-100,
+.theme-light .text-sky-100,
+body.theme-light .text-sky-200,
+.theme-light .text-sky-200,
+body.theme-light .text-sky-300,
+.theme-light .text-sky-300 {
+  color: #0369a1 !important;
+}
+
+body.theme-light .text-cyan-50,
+.theme-light .text-cyan-50,
+body.theme-light .text-cyan-100,
+.theme-light .text-cyan-100,
+body.theme-light .text-cyan-200,
+.theme-light .text-cyan-200,
+body.theme-light .text-cyan-300,
+.theme-light .text-cyan-300 {
+  color: #0e7490 !important;
+}
+
+body.theme-light .text-blue-50,
+.theme-light .text-blue-50,
+body.theme-light .text-blue-100,
+.theme-light .text-blue-100,
+body.theme-light .text-blue-200,
+.theme-light .text-blue-200,
+body.theme-light .text-blue-300,
+.theme-light .text-blue-300 {
+  color: #1d4ed8 !important;
+}
+
+body.theme-light .text-emerald-50,
+.theme-light .text-emerald-50,
+body.theme-light .text-emerald-100,
+.theme-light .text-emerald-100,
+body.theme-light .text-emerald-200,
+.theme-light .text-emerald-200,
+body.theme-light .text-emerald-300,
+.theme-light .text-emerald-300 {
+  color: #047857 !important;
+}
+
+body.theme-light .text-teal-50,
+.theme-light .text-teal-50,
+body.theme-light .text-teal-100,
+.theme-light .text-teal-100,
+body.theme-light .text-teal-200,
+.theme-light .text-teal-200,
+body.theme-light .text-teal-300,
+.theme-light .text-teal-300 {
+  color: #0f766e !important;
+}
+
+body.theme-light .text-green-50,
+.theme-light .text-green-50,
+body.theme-light .text-green-100,
+.theme-light .text-green-100,
+body.theme-light .text-green-200,
+.theme-light .text-green-200,
+body.theme-light .text-green-300,
+.theme-light .text-green-300 {
+  color: #15803d !important;
+}
+
+body.theme-light .text-amber-50,
+.theme-light .text-amber-50,
+body.theme-light .text-amber-100,
+.theme-light .text-amber-100,
+body.theme-light .text-amber-200,
+.theme-light .text-amber-200,
+body.theme-light .text-amber-300,
+.theme-light .text-amber-300 {
+  color: #b45309 !important;
+}
+
+body.theme-light .text-orange-50,
+.theme-light .text-orange-50,
+body.theme-light .text-orange-100,
+.theme-light .text-orange-100,
+body.theme-light .text-orange-200,
+.theme-light .text-orange-200,
+body.theme-light .text-orange-300,
+.theme-light .text-orange-300 {
+  color: #c2410c !important;
+}
+
+body.theme-light .text-red-50,
+.theme-light .text-red-50,
+body.theme-light .text-red-100,
+.theme-light .text-red-100,
+body.theme-light .text-red-200,
+.theme-light .text-red-200,
+body.theme-light .text-red-300,
+.theme-light .text-red-300 {
+  color: #b91c1c !important;
+}
+
+body.theme-light .text-rose-50,
+.theme-light .text-rose-50,
+body.theme-light .text-rose-100,
+.theme-light .text-rose-100,
+body.theme-light .text-rose-200,
+.theme-light .text-rose-200,
+body.theme-light .text-rose-300,
+.theme-light .text-rose-300 {
+  color: #be123c !important;
+}
+
+body.theme-light .text-pink-50,
+.theme-light .text-pink-50,
+body.theme-light .text-pink-100,
+.theme-light .text-pink-100,
+body.theme-light .text-pink-200,
+.theme-light .text-pink-200,
+body.theme-light .text-pink-300,
+.theme-light .text-pink-300 {
+  color: #be185d !important;
+}
+
+body.theme-light .text-violet-50,
+.theme-light .text-violet-50,
+body.theme-light .text-violet-100,
+.theme-light .text-violet-100,
+body.theme-light .text-violet-200,
+.theme-light .text-violet-200,
+body.theme-light .text-violet-300,
+.theme-light .text-violet-300 {
+  color: #6d28d9 !important;
+}
+
+body.theme-light .text-purple-50,
+.theme-light .text-purple-50,
+body.theme-light .text-purple-100,
+.theme-light .text-purple-100,
+body.theme-light .text-purple-200,
+.theme-light .text-purple-200,
+body.theme-light .text-purple-300,
+.theme-light .text-purple-300 {
+  color: #7c3aed !important;
+}
+
+body.theme-light .text-fuchsia-50,
+.theme-light .text-fuchsia-50,
+body.theme-light .text-fuchsia-100,
+.theme-light .text-fuchsia-100,
+body.theme-light .text-fuchsia-200,
+.theme-light .text-fuchsia-200,
+body.theme-light .text-fuchsia-300,
+.theme-light .text-fuchsia-300 {
+  color: #a21caf !important;
+}
+
+body.theme-light .text-indigo-50,
+.theme-light .text-indigo-50,
+body.theme-light .text-indigo-100,
+.theme-light .text-indigo-100,
+body.theme-light .text-indigo-200,
+.theme-light .text-indigo-200,
+body.theme-light .text-indigo-300,
+.theme-light .text-indigo-300 {
+  color: #4f46e5 !important;
+}
+
+body.theme-light .text-lime-50,
+.theme-light .text-lime-50,
+body.theme-light .text-lime-100,
+.theme-light .text-lime-100,
+body.theme-light .text-lime-200,
+.theme-light .text-lime-200,
+body.theme-light .text-lime-300,
+.theme-light .text-lime-300 {
+  color: #4d7c0f !important;
+}
+
+body.theme-light .text-yellow-50,
+.theme-light .text-yellow-50,
+body.theme-light .text-yellow-100,
+.theme-light .text-yellow-100,
+body.theme-light .text-yellow-200,
+.theme-light .text-yellow-200,
+body.theme-light .text-yellow-300,
+.theme-light .text-yellow-300 {
+  color: #a16207 !important;
+}
+
+body.theme-light .glass,
+.theme-light .glass {
+  background: rgba(255, 255, 255, 0.7) !important;
+  border: 1px solid rgba(148, 163, 184, 0.2) !important;
+}
+
+body.theme-light .bg-slate-950\/70,
+body.theme-light .bg-slate-950\/90 {
+  background-color: rgba(255, 255, 255, 0.72) !important;
+}
+
+body.theme-light .bg-white\/5,
+body.theme-light .bg-white\/6,
+body.theme-light .bg-white\/8 {
+  background-color: rgba(255, 255, 255, 0.72) !important;
+}
+
+body.theme-light .border-white\/10,
+body.theme-light .border-white\/8 {
+  border-color: rgba(148, 163, 184, 0.22) !important;
+}
+
+body.theme-light .shadow-glass {
+  box-shadow: 0 20px 80px rgba(15, 23, 42, 0.08) !important;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.theme-light {
+  color-scheme: light;
+  background: linear-gradient(180deg, #f7fbff 0%, #eef4fb 100%);
+  color: #0f172a;
+}
+
+.glass {
+  background: rgba(12, 24, 43, 0.72);
+  border: 1px solid rgba(148, 163, 184, 0.16);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+
+.glass-light {
+  background: rgba(255, 255, 255, 0.62);
+  border: 1px solid rgba(148, 163, 184, 0.18);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+
+.mesh {
+  background-image:
+    radial-gradient(circle at 10% 20%, rgba(14, 165, 233, 0.16), transparent 22%),
+    radial-gradient(circle at 90% 0%, rgba(168, 85, 247, 0.16), transparent 18%),
+    radial-gradient(circle at 80% 85%, rgba(34, 211, 238, 0.1), transparent 18%),
+    linear-gradient(180deg, rgba(7, 17, 31, 0.97), rgba(10, 18, 34, 0.98));
+}
+
+.grid-bg {
+  background-image: linear-gradient(rgba(148, 163, 184, 0.09) 1px, transparent 1px), linear-gradient(90deg, rgba(148, 163, 184, 0.09) 1px, transparent 1px);
+  background-size: 36px 36px;
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+}
+
+.card-hover {
+  transition: transform 200ms ease, box-shadow 200ms ease, border-color 200ms ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+}
+
+.gradient-border {
+  position: relative;
+}
+
+.gradient-border::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  padding: 1px;
+  background: linear-gradient(135deg, rgba(14, 165, 233, 0.8), rgba(168, 85, 247, 0.75), rgba(34, 211, 238, 0.65));
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+}
+
+select {
+  color-scheme: light;
+}
+
+select option,
+select optgroup {
+  color: #0f172a !important;
+  background: #ffffff !important;
+}
+
+select option:checked,
+select option:selected {
+  background: #0ea5e9 !important;
+  color: #ffffff !important;
+}
+
+select:focus option:hover {
+  background: #e0f2fe !important;
+  color: #0f172a !important;
+}
+
+/* ============ RECHARTS TOOLTIP / LEGEND / PIE LABELS — DARK MODE (DEFAULT) ============ */
+.recharts-tooltip-wrapper,
+.recharts-tooltip-wrapper-enter,
+.recharts-tooltip-wrapper-enter-done {
+  outline: none !important;
+}
+
+.recharts-default-tooltip {
+  background: rgba(2, 6, 23, 0.95) !important;
+  border: 1px solid rgba(148, 163, 184, 0.18) !important;
+  border-radius: 12px !important;
+  padding: 10px 14px !important;
+  box-shadow: 0 10px 40px rgba(2, 8, 23, 0.6) !important;
+}
+
+.recharts-tooltip-label {
+  color: #f1f5f9 !important;
+  font-weight: 600 !important;
+  font-size: 13px !important;
+  margin-bottom: 4px !important;
+}
+
+.recharts-tooltip-item {
+  color: #cbd5e1 !important;
+  font-size: 13px !important;
+}
+
+.recharts-tooltip-item-name,
+.recharts-tooltip-item-separator {
+  color: #cbd5e1 !important;
+}
+
+.recharts-legend-wrapper,
+.recharts-default-legend {
+  color: #cbd5e1 !important;
+}
+
+.recharts-legend-item-text {
+  color: #cbd5e1 !important;
+  font-size: 12px !important;
+}
+
+.recharts-pie-label-text,
+.recharts-pie-label tspan,
+.recharts-text tspan,
+.recharts-text {
+  fill: #e2e8f0 !important;
+  color: #e2e8f0 !important;
+}
+
+.recharts-cartesian-axis-tick-value tspan,
+.recharts-cartesian-axis-tick-value {
+  fill: #94a3b8 !important;
+}
+
+.recharts-cartesian-axis-line,
+.recharts-cartesian-axis-tick-line {
+  stroke: rgba(148, 163, 184, 0.4) !important;
+}
+
+.recharts-cartesian-grid line {
+  stroke: rgba(148, 163, 184, 0.15) !important;
+}
+
+.recharts-brush-slide,
+.recharts-brush {
+  fill: rgba(148, 163, 184, 0.1) !important;
+}
+
+/* ============ RECHARTS — LIGHT MODE OVERRIDES ============ */
+body.theme-light .recharts-default-tooltip,
+.theme-light .recharts-default-tooltip {
+  background: #ffffff !important;
+  border: 1px solid rgba(148, 163, 184, 0.28) !important;
+  box-shadow: 0 10px 40px rgba(15, 23, 42, 0.1) !important;
+}
+
+body.theme-light .recharts-tooltip-label,
+.theme-light .recharts-tooltip-label {
+  color: #0f172a !important;
+}
+
+body.theme-light .recharts-tooltip-item,
+.theme-light .recharts-tooltip-item,
+body.theme-light .recharts-tooltip-item-name,
+.theme-light .recharts-tooltip-item-name,
+body.theme-light .recharts-tooltip-item-separator,
+.theme-light .recharts-tooltip-item-separator {
+  color: #334155 !important;
+}
+
+body.theme-light .recharts-legend-wrapper,
+.theme-light .recharts-legend-wrapper,
+body.theme-light .recharts-default-legend,
+.theme-light .recharts-default-legend,
+body.theme-light .recharts-legend-item-text,
+.theme-light .recharts-legend-item-text {
+  color: #334155 !important;
+}
+
+body.theme-light .recharts-pie-label-text,
+.theme-light .recharts-pie-label-text,
+body.theme-light .recharts-pie-label tspan,
+.theme-light .recharts-pie-label tspan,
+body.theme-light .recharts-text tspan,
+.theme-light .recharts-text tspan,
+body.theme-light .recharts-text,
+.theme-light .recharts-text {
+  fill: #1e293b !important;
+  color: #1e293b !important;
+}
+
+body.theme-light .recharts-cartesian-axis-tick-value tspan,
+.theme-light .recharts-cartesian-axis-tick-value tspan,
+body.theme-light .recharts-cartesian-axis-tick-value,
+.theme-light .recharts-cartesian-axis-tick-value {
+  fill: #475569 !important;
+}
+
+body.theme-light .recharts-cartesian-axis-line,
+.theme-light .recharts-cartesian-axis-line,
+body.theme-light .recharts-cartesian-axis-tick-line,
+.theme-light .recharts-cartesian-axis-tick-line {
+  stroke: rgba(148, 163, 184, 0.5) !important;
+}
+
+body.theme-light .recharts-cartesian-grid line,
+.theme-light .recharts-cartesian-grid line {
+  stroke: rgba(148, 163, 184, 0.22) !important;
+}
